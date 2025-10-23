@@ -7,6 +7,10 @@ h1 {
   font-size: 48px;
   margin-bottom: 40px;
 }
+h1 a {
+  text-decoration: none;
+  color: #313153;
+}
 h2 {
   margin: 0;
   font-size: 28px;
@@ -51,11 +55,18 @@ select {
   vertical-align: middle;
   font-weight: bold;
 }
+div .home {
+  text-align: right;
+}
+.home {
+  color: #55557c;
+  text-decoration: none;
+}
 footer {
   text-align: center;
   margin: 40px;
-  color: rgb(85, 85, 124);
+  color: #55557c;
 }
 footer a {
-  color: rgb(64, 64, 108);
+  color: #55557c;
 }
