@@ -1,4 +1,5 @@
 function updateLive() {
+  //Vancouver
   let vancouverElement = document.querySelector("#vancouver");
   if (vancouverElement) {
     let vancouverDateElement = vancouverElement.querySelector(".date");
@@ -11,25 +12,28 @@ function updateLive() {
     );
   }
 
-  let muscatElement = document.querySelector("#muscat");
-  if (muscatElement) {
-    let muscatDateElement = muscatElement.querySelector(".date");
-    let muscatTimeElement = muscatElement.querySelector(".time");
-    let muscatTimeZone = moment().tz("Asia/Muscat");
+  //Chennai
+  let chennaiElement = document.querySelector("#chennai");
+  if (chennaiElement) {
+    let chennaiDateElement = chennaiElement.querySelector(".date");
+    let chennaiTimeElement = chennaiElement.querySelector(".time");
+    let chennaiTimeZone = moment().tz("Asia/Calcutta");
 
-    muscatDateElement.innerHTML = muscatTimeZone.format("MMMM Do YYYY");
-    muscatTimeElement.innerHTML = muscatTimeZone.format(
+    chennaiDateElement.innerHTML = chennaiTimeZone.format("MMMM Do YYYY");
+    chennaiTimeElement.innerHTML = chennaiTimeZone.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
-updateLive();
-setInterval(updateLive, 1000);
 
+//Dropdown select city
 function updateCity(event) {
   let cityTimeZone = event.target.value;
-  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
 
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
 
   let citiesElement = document.querySelector("#cities");
@@ -44,6 +48,9 @@ function updateCity(event) {
   )}</small></div>
     </div>`;
 }
+
+updateLive();
+setInterval(updateLive, 1000);
 
 let citySelect = document.querySelector("#city");
 citySelect.addEventListener("change", updateCity);
