@@ -6,18 +6,24 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
-      <h1><a href="/">🕒 World Clock</a></h1>
+      <h1><a href="/">World Clock</a></h1>
 
       <select name="city" id="city">
         <option value="">🔎 Select a city...</option>
         <option value="current">📍 My Location</option>
         <option value="Europe/London">🇬🇧 London</option>
         <option value="America/New_York">🇺🇸 New York</option>
-        <option value="Asia/Muscat">🇴🇲 Muscat</option>
         <option value="Asia/Seoul">🇰🇷 Seoul</option>
         <option value="Australia/Melbourne">🇦🇺 Melbourne</option>
         <option value="Africa/Lagos">🇳🇬 Lagos</option>
@@ -27,7 +33,14 @@
         <div class="city" id="vancouver">
           <div>
             <h2>Vancouver</h2>
-            <div class="date">October 16, 2025</div>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="muscat">
+          <div>
+            <h2>Muscat</h2>
+            <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>

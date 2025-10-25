@@ -1,72 +1,98 @@
 body {
-  font-family: Avenir;
-  background-color: #e6e6fa;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+  background: linear-gradient(
+    109.6deg,
+    #242d39 11.2%,
+    #10253c 51.2%,
+    #000000 98.6%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  color: #000000;
+}
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 8px 8px 8px #cccacf33;
+  border-radius: 0px;
+  border: 1px solid black;
+  margin-bottom: 20px;
 }
 h1 {
   text-align: center;
-  font-size: 48px;
+  font-size: 60px;
   margin-bottom: 40px;
 }
 h1 a {
   text-decoration: none;
-  color: #313153;
+  color: #000000;
 }
 h2 {
   margin: 0;
-  font-size: 28px;
+  font-size: 36px;
 }
 select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   display: block;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 0px;
+  border: 1px solid black;
   padding: 12px;
   font-size: 16px;
-  font-family: Avenir;
-}
-.container {
-  max-width: 600px;
-  margin: 60px auto;
-  background-color: #ffffff;
-  padding: 40px;
-  box-shadow: 10px 10px 10px rgba(66, 42, 93, 0.1);
-  border-radius: 8px;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #242d39;
 }
 .city {
   display: flex;
   justify-content: space-between;
   margin: 40px 0;
   padding-bottom: 20px;
-  border-bottom: 2px dashed #e6e6fa;
+  border-bottom: 2px dashed #cdcdd8;
 }
 .city:last-child {
   border: none;
   padding-bottom: 0;
 }
 .date {
-  color: gray;
-  font-size: 16px;
+  color: #606470;
+  font-size: 20px;
+  padding-top: 4px;
 }
 .time {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 48px;
 }
 .time small {
-  font-size: 14px;
+  font-size: 20px;
   vertical-align: middle;
-  font-weight: bold;
 }
 div .home {
   text-align: right;
 }
 .home {
-  color: #55557c;
+  color: #242d39;
   text-decoration: none;
+  font-size: 14px;
+}
+.home:hover {
+  color: black;
 }
 footer {
   text-align: center;
   margin: 40px;
-  color: #55557c;
+  color: #cdcdd8;
+  font-weight: 100;
 }
 footer a {
-  color: #55557c;
+  color: white;
 }

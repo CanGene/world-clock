@@ -11,7 +11,18 @@ function updateLive() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  //Muscat
+  let muscatElement = document.querySelector("#muscat");
+  if (muscatElement) {
+    let muscatDateElement = muscatElement.querySelector(".date");
+    let muscatTimeElement = muscatElement.querySelector(".time");
+    let muscatTimeZone = moment().tz("Asia/Muscat");
 
+    muscatDateElement.innerHTML = muscatTimeZone.format("MMMM Do YYYY");
+    muscatTimeElement.innerHTML = muscatTimeZone.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
   //Chennai
   let chennaiElement = document.querySelector("#chennai");
   if (chennaiElement) {
@@ -44,7 +55,7 @@ function updateCity(event) {
         <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
       </div>
       <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format(
-    "A"
+    "  A"
   )}</small></div>
     </div>     
     <div><a href="/" class="home">Return Home ✈︎</a></div>
