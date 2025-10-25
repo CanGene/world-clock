@@ -1,5 +1,6 @@
 body {
-  font-family: "Micro 5", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
   font-style: normal;
   background: linear-gradient(
     109.6deg,
@@ -25,19 +26,13 @@ body {
 }
 h1 {
   text-align: center;
-
-  font-size: 60px;
+  font-size: 52px;
   margin-bottom: 40px;
+  font-weight: 800;
 }
 h1 a {
   text-decoration: none;
   color: #000000;
-}
-h2 {
-  font-family: "Micro 5", sans-serif;
-  font-style: normal;
-  margin: 0;
-  font-size: 36px;
 }
 select {
   appearance: none;
@@ -49,9 +44,10 @@ select {
   border: 1px solid black;
   padding: 12px;
   font-size: 16px;
-  font-family: "VT323", monospace;
-  font-style: normal;
   color: #242d39;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .city {
   display: flex;
@@ -64,33 +60,38 @@ select {
   border: none;
   padding-bottom: 0;
 }
+h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
 .date {
   color: #606470;
-  font-size: 20px;
+  font-size: 16px;
   padding-top: 4px;
 }
 .time {
-  font-size: 48px;
+  font-weight: 600;
+  font-size: 40px;
 }
 .time small {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 800;
   vertical-align: middle;
 }
-div .home {
-  text-align: right;
-}
 .home {
-  color: #242d39;
+  color: #606470;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 .home:hover {
   color: black;
 }
 footer {
+  font-size: 14px;
   text-align: center;
   margin: 40px;
-  color: #cdcdd8;
+  color: #d7d7e3;
 }
 footer a {
   color: white;
