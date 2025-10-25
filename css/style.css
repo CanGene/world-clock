@@ -1,6 +1,5 @@
 body {
   font-family: "Micro 5", sans-serif;
-  font-weight: 400;
   font-style: normal;
   background: linear-gradient(
     109.6deg,
@@ -36,7 +35,6 @@ h1 a {
 }
 h2 {
   font-family: "Micro 5", sans-serif;
-  font-weight: 400;
   font-style: normal;
   margin: 0;
   font-size: 36px;
@@ -52,7 +50,6 @@ select {
   padding: 12px;
   font-size: 16px;
   font-family: "VT323", monospace;
-  font-weight: 400;
   font-style: normal;
   color: #242d39;
 }
@@ -94,7 +91,6 @@ footer {
   text-align: center;
   margin: 40px;
   color: #cdcdd8;
-  font-weight: 100;
 }
 footer a {
   color: white;
